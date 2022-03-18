@@ -1,16 +1,14 @@
 import ForecastCard from "./ForecastCard"
 
-const DisplayInfo = ({location, current, forecast}) => {
-
-    console.log( forecast )
+const DisplayInfo = () => {
 
     return (
         <div className='display__container'>
-            <div>
+            {/* <div>
                 <p>{location.name}, {location.region}, {location.country}</p>
                 <p>{location.lat} { location.lon}</p>
             </div>
-            
+
             <img src={current.condition.icon}/>
             <p>{current.condition.text}</p>
 
@@ -23,11 +21,10 @@ const DisplayInfo = ({location, current, forecast}) => {
                 </div>
             </div>
 
-            <div>
-                <p>{forecast[2].date}</p>
+            <div> 
                 <ForecastCard data={forecast[1]}/>
                 <ForecastCard data={forecast[2]}/>
-            </div>
+            </div> */}
         </div>
     )
 }
